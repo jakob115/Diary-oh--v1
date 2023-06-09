@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Diary-oh">
+    <meta name="author" content="Jakob Psenicnik">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- FontAwesome icons -->
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+
+    <!-- Google fonts (Playfair Display, Ralewy) hosted on Google servers
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    //-->
+
+    <!-- Custom styles for this template, including localy hosted Google fonts -->
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E></script>
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='diary.png') }}" rel="shortcut icon">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="nav-link text-muted" href="/"> <img src="/static/diary.png" id="icon123"/> Diary-oh</a>
+    <p style="width: 78vw; margin-top: 17px" >
+        <a id="link_to_the_bottom" href="#bottom">Go to bottom</a>
+    </p>
+    <div id="no_clue"></div>
+</nav>
+
+<main role="main" class="container">
+
+    <header class="blog-header py-3" id="header_base">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-2 d-flex justify-content-start align-items-center">
+                <a class="btn btn-outline-secondary sticky" id="add_button123" href="/post/add">Add New Entry</a>
+            </div>
+            <div class="col-8 text-center">
+                <h1 style="font-size: 60px">Diary-oh</h1>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center"></div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+</main><!-- /.container -->
+
+<footer class="blog-footer" id="bottom">
+    <p>»Diary-oh« made by Jakob</p>
+    <p>
+        <a href="#top">Back to top</a>
+    </p>
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/jquery-3.5.0.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper-1.16.0.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Diary-oh &middot; {{ title }}{% endblock %}
+
+{% block content %}
+    <div class="col-10 offset-1 p-4 p-md-5 my-2">
+        <div class="card">
+            <div class="card-header text-white bg-dark">
+                <h3>{{ title }}</h3>
+            </div>
+
+            <div class="card-body">
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        <b>{{ form.title.label }}</b>
+                        {{ form.title(class='form-control') }}
+                    </div>
+                    <div class="form-group">
+                        <b>{{ form.content.label }}</b>
+                        {{ form.content(rows='16', class='form-control') }}
+                    </div>
+                    {{ form.submit(class='btn btn-success') }}
+					<a href="/" class="btn btn-outline-secondary">Cancel</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
