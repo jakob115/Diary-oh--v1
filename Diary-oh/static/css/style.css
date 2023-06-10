@@ -30,17 +30,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
 }
 
-.blog-header {
+.diary-header {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.blog-header-logo {
+.diary-header-logo {
     font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
     font-size: 2.25rem;
 }
 
-.blog-header-logo:hover {
+.diary-header-logo:hover {
     text-decoration: none;
 }
 
@@ -107,23 +107,23 @@ div#latest_entry {
     }
 }
 
-.blog-post {
+.entry-post {
     margin-bottom: 2rem;
     position: relative;
     right: 7.5vw;
 }
 
-.blog-post-title {
+.entry-post-title {
     margin-bottom: .25rem;
     font-size: 2.5rem;
 }
 
-.blog-post-meta {
+.entry-post-meta {
     margin-bottom: 1.25rem;
     color: #999;
 }
 
-.blog-footer {
+.diary-footer {
     padding: 1rem 0;
     color: #999;
     text-align: center;
@@ -131,7 +131,7 @@ div#latest_entry {
     border-top: .05rem solid #e5e5e5;
 }
 
-.blog-footer p:last-child {
+.diary-footer p:last-child {
     margin-bottom: 0;
 }
 
@@ -161,18 +161,10 @@ header a#add_button123 {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    position: relative;
-    left: 74vw;
-    top: 5vw;
-    /*transition: bottom 0.3s ease-in-out;*/
-    /*z-index: 10;*/
-
-}
-
-.sticky {
     position: fixed;
-    top: 0;
-    z-index: 9999; /* to ensure the button is above other elements */
+    right: 4vw;
+    top: 10vw;
+
 }
 
 a#add_button123:hover {
@@ -191,7 +183,7 @@ a#link_to_the_bottom {
 }
 
 
-div#no_blog_posts {
+div#no_entry_posts {
     display: flex;
     text-align: center;
     justify-content: center;

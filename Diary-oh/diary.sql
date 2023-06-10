@@ -1,7 +1,7 @@
 -- These SQL commands are for SQLite database engine
 -- For MySQL, PostgreSQL etc. they might be different 
 
-CREATE TABLE IF NOT EXISTS 'blogpost' (
+CREATE TABLE IF NOT EXISTS 'entrypost' (
   'id' INTEGER NOT NULL PRIMARY KEY,
   'created' DATETIME NOT NULL,
   'updated' DATETIME NOT NULL,
